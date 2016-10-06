@@ -1,0 +1,93 @@
+body {
+	background-color:black;
+	color:white;
+	font-family:'Roboto Condensed', sans-serif;
+	text-align:center;
+	font-size:3vw;
+}
+
+#header {
+	min-height:500px;
+	background-color:rgb(6,47,49);
+	overflow-x:hidden;
+}
+
+h1 {
+	font-size: 1.25em;
+	font-family:'Oswald',sans-serif;
+}
+
+.letsTalk {
+	color: white;
+	background: rgba(0,0,0,0);
+	border: solid 5px white;
+	margin:35px;
+}
+
+button:hover {
+	border-color: #346392;
+	color: #346392;
+}
+
+a {
+	color:white;
+	text-decoration:none;
+}
+
+a:focus {
+	text-decoration:none;
+}
+
+a:visited {
+	color: white;
+	background: rgba(0,0,0,0);
+	border: solid 5px white;
+}
+
+.title {
+	padding:20px;
+}
+
+#works {
+	background-color:rgb(127,40,102);
+	padding:0 30px;
+}
+
+#works img {
+	margin-bottom:20px;
+}
+
+#tech {
+	background-color:rgb(35, 57, 163);
+}
+
+#tech ul {
+	list-style-type:none;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:0;
+}
+
+#tech li {
+	float:left;
+	padding:10px;
+}
+
+i {
+	font-size:3vw;
+}
+
+#contactInfo {
+	background-color:rgb(39,129,132);
+	min-height:500px;
+}
+
+#contactInfo p {
+	margin:10px;
+}
+
+#contactInfo a {
+	text-decoration:underline;
+}
+
