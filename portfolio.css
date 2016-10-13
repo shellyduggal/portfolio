@@ -7,21 +7,42 @@ body {
 }
 
 #header {
-	min-height:500px;
+	min-height:100vh;
 	background-color:rgb(6,47,49);
-	overflow-x:hidden;
+	background: url(images/balloons.jpg) no-repeat center center fixed;
+	background-size:cover;
+	display:flex;
+	align-items:flex-end;
+	text-align:left;
 }
 
-h1 {
-	font-size: 1.25em;
+#header h1 {
 	font-family:'Oswald',sans-serif;
+	font-size:4vw;
+	line-height:1.25;
+	letter-spacing:4px;
+}
+
+#header p {
+	font-family:'Oswald', sans-serif;
+	font-size:2vw;
+	line-height:1.25;
+	letter-spacing:4px;
 }
 
 .letsTalk {
 	color: white;
 	background: rgba(0,0,0,0);
-	border: solid 5px white;
+	border: solid 2px white;
 	margin:35px;
+}
+
+#intro {    
+	background-color: rgba(25,75,100,0.5);
+    width: 100%;
+    margin-bottom: 1%;
+    text-shadow:1px 1px rgb(50,50,50);
+    padding:1%;
 }
 
 button:hover {
@@ -49,8 +70,8 @@ a:visited {
 }
 
 #works {
-	background-color:rgb(127,40,102);
-	padding:0 30px;
+	background-color:rgb(35, 57, 163);
+	padding:5%;
 }
 
 #works img {
@@ -58,7 +79,7 @@ a:visited {
 }
 
 #tech {
-	background-color:rgb(35, 57, 163);
+	background-color:rgb(71, 20, 122);
 }
 
 #tech ul {
@@ -71,16 +92,17 @@ a:visited {
 
 #tech li {
 	float:left;
-	padding:10px;
+	padding:4%;
 }
 
 i {
-	font-size:3vw;
+	font-size:4vw;
 }
 
 #contactInfo {
 	background-color:rgb(39,129,132);
 	min-height:500px;
+	font-size:2vw;
 }
 
 #contactInfo p {
@@ -91,3 +113,6 @@ i {
 	text-decoration:underline;
 }
 
+#footer {
+	font-size:1vw;
+}
