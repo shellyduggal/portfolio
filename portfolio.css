@@ -201,7 +201,7 @@ li i {
 	display:block;
 	width:100%;
 	padding:2%;
-	margin:2%;
+	margin:2% auto;
 	color:white;
 	border:0.5px solid gray;
 }
@@ -210,15 +210,19 @@ li i {
 	width:100%;
 	display:block;
 	padding:2.2%;
-	margin:2%;
+	margin:2% auto;
 	border:0.5px solid gray;
 }
 
 #contact .button {
-	color:rgb(23, 137,125);
-	border:1px solid gray;
-	width:100%;
+	color:white;
+	border:1px solid white;
+	width:50%;
+	background-color:transparent;
+	text-align:center;
+	margin:3% auto;
 }
+
 
 @media screen and (min-width:830px) {
 	#contact p {
