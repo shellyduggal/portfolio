@@ -1,118 +1,252 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing:border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	background-color:black;
-	color:white;
-	font-family:'Roboto Condensed', sans-serif;
+	line-height: 1.4;
+	font-family:'Roboto Condensed', Helvetica, sans-serif;
 	text-align:center;
-	font-size:3vw;
+	letter-spacing:4px;
+	color:white;
+	overflow-x:hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-#header {
-	min-height:100vh;
-	background-color:rgb(6,47,49);
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+	content:" ";
+	display:table;
+}
+
+.grouping:after {
+	clear:both;
+}
+
+img, iframe, video, object {
+	max-width: 100%;
+}
+
+
+/**************************/
+/*HEADER*/
+/*************************/
+
+#intro {
 	background: url(images/balloons.jpg) no-repeat center center fixed;
-	background-size:cover;
+	background-size: cover;
+	background-color: rgb(6, 47, 49);
+	min-height:100vh;
 	display:flex;
 	align-items:flex-end;
 	text-align:left;
+	font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+#header {
+	width:100%;
+	background-color:rgba(100,100,100,0.5);
+	text-shadow:rgba(50,50,50);
+	margin-bottom:2%;
+	padding-left:2%;
+	padding-top:1%;
+	padding-bottom:1%;
 }
 
 #header h1 {
-	font-family:'Oswald',sans-serif;
-	font-size:4vw;
-	line-height:1.25;
-	letter-spacing:4px;
+	font-size: 5vw;
 }
 
 #header p {
-	font-family:'Oswald', sans-serif;
-	font-size:2vw;
-	line-height:1.25;
-	letter-spacing:4px;
+	font-size:3.5vw
 }
 
-.letsTalk {
-	color: white;
-	background: rgba(0,0,0,0);
-	border: solid 2px white;
-	margin:35px;
+#header li {
+	font-size:2.5vw;
+	display:inline;
 }
 
-#intro {    
-	background-color: rgba(25,75,100,0.5);
-    width: 100%;
-    margin-bottom: 1%;
-    text-shadow:1px 1px rgb(50,50,50);
-    padding:1%;
-}
-
-button:hover {
-	border-color: #346392;
-	color: #346392;
-}
-
-a {
+#header li a {
+	text-decoration:none;
 	color:white;
-	text-decoration:none;
-}
-
-a:focus {
-	text-decoration:none;
-}
-
-a:visited {
-	color: white;
-	background: rgba(0,0,0,0);
-	border: solid 5px white;
-}
-
-.title {
-	padding:20px;
 }
 
 #works {
-	background-color:rgb(35, 57, 163);
+	background-color:rgb(10,62,102);
+	text-align:center;
 	padding:5%;
 }
 
-#works img {
-	margin-bottom:20px;
+.title { 
+	font-size:3.5vw;
+	padding:5%;
+}
+
+.flex-container {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+}
+
+.project {
+	border:1px solid white;
+	padding:2%;
+	margin:3%;
+}
+
+.project img {
+	max-width:100%;
+	height:auto;
+}
+
+.caption {
+	border-top:1px solid white;
+	width:80%;
+	margin:0 auto;
+	font-size:0.75rem;
 }
 
 #tech {
-	background-color:rgb(71, 20, 122);
+	background-color:rgb(90,34,145);
+	padding:5%;
+	margin:0 auto;
 }
 
 #tech ul {
-	list-style-type:none;
+	padding:7% 3%;
+}
+
+li i {
+	font-size:3vw;
+}
+
+#contact {
+	background-color:rgb(23, 137,125);
+	padding:5%;
+	margin:0 auto;
+}
+
+#contact p {
+	font-size:3vw;
+	height:200px;
+	overflow:scroll;
+	padding:3%;
+	text-align:left;
+}
+
+#contact ul {
+	padding-top:5%;
 	display:flex;
-	align-items:center;
-	justify-content:center;
-	padding:0;
+	flex-flow:row wrap;
+	justify-content:space-around;
 }
 
-#tech li {
-	float:left;
-	padding:4%;
+#contact li {
+	font-size:2.5vw;
+	display:inline;
 }
 
-i {
-	font-size:4vw;
+#contact li a {
+	text-decoration:none;
+	color:white;
 }
 
-#contactInfo {
-	background-color:rgb(39,129,132);
-	min-height:500px;
-	font-size:2vw;
+#contact form {
+	padding:3%;
+	font-size:3vw;
 }
 
-#contactInfo p {
-	margin:10px;
+#contact form input {
+	display:block;
+	width:100%;
+	padding:2%;
+	margin:2%;
+	color:white;
+	border:0.5px solid gray;
 }
 
-#contactInfo a {
-	text-decoration:underline;
+#contact form textarea {
+	width:100%;
+	display:block;
+	padding:2.2%;
+	margin:2%;
+	border:0.5px solid gray;
 }
 
-#footer {
-	font-size:1vw;
+#contact .button {
+	color:rgb(23, 137,125);
+	border:1px solid gray;
+	width:100%;
 }
+
+@media screen and (min-width:830px) {
+	#contact p {
+		float:left;
+		display:inline;
+		width:50%;
+		padding:1%;
+		font-size:2vw;
+		height:300px;
+		text-align:justify;
+	}
+
+	#contact form {
+		float:right;
+		display:inline;
+		width:50%;
+		padding:1%;
+		height:400px;
+	}
+
+	#contact ul {
+		clear:both;
+		padding:0;
+	}
+}
+
+
+
+
+
+

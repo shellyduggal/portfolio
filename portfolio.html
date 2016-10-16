@@ -2,87 +2,77 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap 3.37 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed" rel="stylesheet">
 	<!-- DevIcons -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/a5f37920dd.js"></script>
 
 
-	<title>Shelly Duggal, Web Developer</title>
+	<title>Web Developer</title>
 
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 <!-- Header -->
-<div class="container-fluid" id="header">
-	<div id="intro">
+<div id="intro">
+	<div id="header">
 		<h1>Shelly Duggal</h1>
-		<p>Full Stack Web Development<br>Austin, Texas<br></p>
+		<p>Full Stack Web Development</p>
+		<p>Austin, Texas</p>
+
+		<ul>
+			<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://www.blogger.com"><i class="fa fa-rss"></i></a></li>
+			<li><a href=#><i class="fa fa-envelope"></i></a></li>
+		</ul>
 	</div>
 </div>
-
 <!-- Works -->
-<div class="container-fluid" id="works">
-	<div class="title">
-		<p>Featured Works</p>
-	</div>
-	<div class="row">
-		<div class="col-xs-6 col-md-3">
-			<a href="#"><img src="http://placehold.it/600x600" class="img-responsive img-thumbnail"></a>
-		</div>
-		<div class="col-xs-6 col-md-3">
-			<a href="#"><img src="http://placehold.it/600x600" class="img-responsive img-thumbnail"></a>
-		</div>
-		<div class="col-xs-6 col-md-3">
-			<a href="#"><img src="http://placehold.it/600x600" class="img-responsive img-thumbnail"></a>
-		</div>
-		<div class="col-xs-6 col-md-3">
-			<a href="#"><img src="http://placehold.it/600x600" class="img-responsive img-thumbnail"></a>
-		</div>
-	</div>
-</div>
-
-<!-- Technologies -->
-<div class="container-fluid" id="tech">
-	<div class="title">
-		<p>My Instruments</p>
-	</div>
-	<ul class="centerList center-block">
-		<li><i class="devicon-bootstrap-plain"></i></li>
-		<li><i class="devicon-css3-plain"></i></li>
-		<li><i class="devicon-html5-plain"></i></li>
-		<li><i class="devicon-javascript-plain"></i></li>
-		<li><i class="devicon-jquery-plain"></i></li>
-		<li><i class="devicon-nodejs-plain"></i></li>
-		<li><i class="devicon-python-plain"></i></li>
+<div id="works">
+	<div class="title">Featured Works</div>
+	<ul class="flex-container">
+		<li class="project"><a href="#"><img src="images/tribute.png"></a><p class="caption">An Ode to My Schnoodle</p></li>
+		<li class="project"><a href="#"><img src="images/duggal.png"></a><p class="caption">Duggal Optics, Delhi</p></li>
+		<li class="project"><a href="#"><img src="images/map.jpg"></a><p class="caption">Text Adventure</p></li>
+		<li class="project"><a href="#"><img src="images/books.jpg"></a><p class="caption">Bookworm</p></li>
 	</ul>	
 </div>
-
-<!-- Contact Form -->
-<div class="container-fluid" id="contactInfo">
-	<div>
-		<img src="http://placehold.it/200x200" id="me">
-		<p>Let's talk about our next project together, or send me a message just to say 'Hello'. Fill out the form or feel free to email me directly at <a href="mailto:duggalsf@gmail.com" class="email-link">duggalsf@gmail.com</a>. I'm really looking forward to meeting you!</p>
-	</div>
-	<div id="contactForm">
-		<form action="#" method="POST" class="form-group">
-			<input type="text" placeholder="Name" name="name" class="form-control">
-			<input type="email" placeholder="Email Address" name="email"required class="form-control">
-			<textarea placeholder="Say Hello" name="message" class="form-control"></textarea>
-			<input type="submit" class="letsTalk">
-		</form>
-	</div>
+<!-- Tech -->
+<div id="tech">
+	<div class="title">My Instruments</div>
+	<ul class="flex-container">
+		<li class="item"><i class="devicon-bootstrap-plain"></i></li>
+		<li class="item"><i class="devicon-css3-plain"></i></li>
+		<li class="item"><i class="devicon-html5-plain"></i></li>
+		<li class="item"><i class="devicon-javascript-plain"></i></li>
+		<li class="item"><i class="devicon-jquery-plain"></i></li>
+		<li class="item"><i class="devicon-nodejs-plain"></i></li>
+		<li class="item"><i class="devicon-python-plain"></i></li>
+	</ul>
 </div>
-
-<!-- Footer -->
-<div class="footer">
-	<p>21 Beans Web Creations - 2016</p>
+<!-- Contact -->
+<div id="contact" class="grouping">
+	<div class="title">Say Hello</div>
+	<p>Hello! I am a full stack web developer in Austin, Texas. Why? I love to create, build, and fix, but most of all I want to solve problems. Form follows function - your users need a website that A. works, and B. looks great because if they enjoy being there, they'll come back. My training is primarily in front-end web development, supplemented with experience in the MEAN stack and web design.In my free time, I like to cook, craft, and plan. I'd love the opportunity to discuss our next project together. Use this handy form or stop by my social media to drop me a line</p>
+	<form action="/" method="POST">
+		<input type="text" name="name" placeholder="Name">
+		<input type="email" name="email" placeholder="Email Address">
+		<textarea placeholder="Hello" name="message" rows="10" cols="5"></textarea>
+		<input type="submit" class="button">
+	</form>
+	<ul>
+		<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="https://github.com"><i class="fa fa-github"></i></a></li>
+		<li><a href="https://www.blogger.com"><i class="fa fa-rss"></i></a></li>
+		<li><a href=#><i class="fa fa-envelope"></i></a></li>
+	</ul>
 </div>
-
-<!-- jQuery, Bootstrap 3.37 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
