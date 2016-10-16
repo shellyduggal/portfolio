@@ -74,10 +74,10 @@ img, iframe, video, object {
 /*************************/
 
 #intro {
-	background: url(images/balloons.jpg) no-repeat center center fixed;
+	background: url(images/balloons.jpg) no-repeat center;
 	background-size: cover;
 	background-color: rgb(6, 47, 49);
-	min-height:100vh;
+	height:auto;
 	display:flex;
 	align-items:flex-end;
 	text-align:left;
@@ -102,16 +102,6 @@ img, iframe, video, object {
 	font-size:3.5vw
 }
 
-#header li {
-	font-size:2.5vw;
-	display:inline;
-}
-
-#header li a {
-	text-decoration:none;
-	color:white;
-}
-
 #works {
 	background-color:rgb(10,62,102);
 	text-align:center;
@@ -121,6 +111,7 @@ img, iframe, video, object {
 .title { 
 	font-size:3.5vw;
 	padding:5%;
+	font-weight:bold;
 }
 
 .flex-container {
@@ -157,8 +148,15 @@ img, iframe, video, object {
 	padding:7% 3%;
 }
 
-li i {
-	font-size:3vw;
+li {
+	font-size:4vw;
+	display:inline;
+	padding:2%;
+}
+
+li a {
+	text-decoration:none;
+	color:white;
 }
 
 #contact {
@@ -180,16 +178,6 @@ li i {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content:space-around;
-}
-
-#contact li {
-	font-size:2.5vw;
-	display:inline;
-}
-
-#contact li a {
-	text-decoration:none;
-	color:white;
 }
 
 #contact form {
@@ -221,10 +209,25 @@ li i {
 	background-color:transparent;
 	text-align:center;
 	margin:3% auto;
+	transition:0.25s all linear;
+}
+
+#contact .button:hover,
+#contact .button:focus {
+	color:rgb(23,137,125);
+	background-color:white;
 }
 
 
 @media screen and (min-width:830px) {
+	#intro {
+		height:100vh;
+	}
+
+	li {
+		font-size:2.5vw;
+	}
+
 	#contact p {
 		float:left;
 		display:inline;
