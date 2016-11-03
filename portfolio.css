@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.4;
-	font-family:'Roboto Condensed', Helvetica, sans-serif;
+	font-family:'Oswald', Helvetica, sans-serif;
 	text-align:center;
 	letter-spacing:4px;
 	color:white;
@@ -131,6 +131,10 @@ img, iframe, video, object {
 	height:auto;
 }
 
+.project img:hover {
+	transform: scale(1.05,1.05);
+}
+
 .caption {
 	border-top:1px solid white;
 	width:80%;
@@ -159,6 +163,10 @@ li a {
 	color:white;
 }
 
+li i:hover {
+	transform: scale(1.3, 1.3);
+}
+
 #contact {
 	background-color:rgb(23, 137,125);
 	padding:5%;
@@ -168,7 +176,7 @@ li a {
 #contact p {
 	font-size:3vw;
 	height:200px;
-	overflow:scroll;
+	overflow-y:scroll;
 	padding:3%;
 	text-align:left;
 }
@@ -216,6 +224,8 @@ li a {
 #contact .button:focus {
 	color:rgb(23,137,125);
 	background-color:white;
+	transform:scale(1.1, 1.1);
+
 }
 
 
