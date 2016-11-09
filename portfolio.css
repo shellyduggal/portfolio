@@ -24,44 +24,35 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	box-sizing:border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1.4;
-	font-family:'Oswald', Helvetica, sans-serif;
-	text-align:center;
-	letter-spacing:4px;
-	color:white;
-	overflow-x:hidden;
+	font-family: 'Oswald', Helvetica, sans-serif;
+	text-align: center;
+	letter-spacing: 4px;
+	color: white;
+	overflow-x: hidden;
 }
+
 ol, ul {
 	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 /* micro clear fix */
 .grouping:before,
 .grouping:after {
-	content:" ";
-	display:table;
+	content: " ";
+	display: table;
 }
 
 .grouping:after {
-	clear:both;
+	clear: both;
 }
 
 img, iframe, video, object {
@@ -74,61 +65,62 @@ img, iframe, video, object {
 /*************************/
 
 #intro {
-	background: url(images/balloons.jpg) no-repeat center;
+	background: url(images/desk.jpg) no-repeat center;
 	background-size: cover;
 	background-color: rgb(6, 47, 49);
-	height:auto;
-	display:flex;
-	align-items:flex-end;
-	text-align:left;
+	height: 300px;
+	display: flex;
+	align-items: flex-end;
+	text-align: left;
 	font-family: 'Oswald', Helvetica, sans-serif;
 }
 
 #header {
-	width:100%;
-	background-color:rgba(100,100,100,0.5);
-	text-shadow:rgba(50,50,50);
-	margin-bottom:2%;
-	padding-left:2%;
-	padding-top:1%;
-	padding-bottom:1%;
+	width: 100%;
+	background-color: rgba(100,100,100,0.5);
+	text-shadow: rgba(50,50,50,0.75);
+	margin: 1% auto;
+	padding-left: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 #header h1 {
-	font-size: 5vw;
+	font-size: 7.5vw;
 }
 
 #header p {
-	font-size:3.5vw
+	font-size: 4.5vw;
 }
 
 #works {
-	background-color:rgb(10,62,102);
-	text-align:center;
-	padding:5%;
+	background-color: #10206B;
+	text-align: center;
+	padding: 5%;
 }
 
 .title { 
-	font-size:3.5vw;
-	padding:5%;
-	font-weight:bold;
+	font-size: 5.5vw;
+	padding: 5%;
+	font-weight: bold;
 }
 
 .flex-container {
-	display:flex;
-	flex-flow:row wrap;
-	justify-content:space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .project {
-	border:1px solid white;
-	padding:2%;
-	margin:3%;
+	border: 1px solid white;
+	padding: 4%;
+	margin: 2%;
 }
 
 .project img {
-	max-width:100%;
-	height:auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 .project img:hover {
@@ -136,31 +128,28 @@ img, iframe, video, object {
 }
 
 .caption {
-	border-top:1px solid white;
-	width:80%;
-	margin:0 auto;
-	font-size:0.75rem;
+	border-top: 1px solid white;
+	width: 80%;
+	margin: 1.25% auto 0 auto;
+	padding-top: 2%;
 }
 
 #tech {
-	background-color:rgb(90,34,145);
-	padding:5%;
-	margin:0 auto;
-}
-
-#tech ul {
-	padding:7% 3%;
+	background-color: #24b5ad;
+	background-image: url(images/pw-pattern.png);
+	padding: 5%;
+	margin: 0 auto;
 }
 
 li {
-	font-size:4vw;
-	display:inline;
-	padding:2%;
+	font-size: 5vw;
+	display: inline;
+	margin: 2%;
 }
 
 li a {
-	text-decoration:none;
-	color:white;
+	text-decoration: none;
+	color: white;
 }
 
 li i:hover {
@@ -168,98 +157,90 @@ li i:hover {
 }
 
 #contact {
-	background-color:rgb(23, 137,125);
-	padding:5%;
-	margin:0 auto;
+	background-color: #3e40b7;
+	padding: 5%;
+	margin: 0 auto;
 }
 
 #contact p {
-	font-size:3vw;
-	height:200px;
-	overflow-y:scroll;
-	padding:3%;
-	text-align:left;
-}
-
-#contact ul {
-	padding-top:5%;
-	display:flex;
-	flex-flow:row wrap;
-	justify-content:space-around;
+	font-size: 4vw;
+	height: 200px;
+	overflow-y: scroll;
+	padding: 3%;
+	text-align: left;
 }
 
 #contact form {
-	padding:3%;
-	font-size:3vw;
+	padding: 3%;
+	font-size: 4vw;
+	overflow-x:hidden;
 }
 
 #contact form input {
-	display:block;
-	width:100%;
-	padding:2%;
-	margin:2% auto;
-	color:white;
-	border:0.5px solid gray;
+	display: block;
+	width: 100%;
+	padding: 2%;
+	margin: 2% auto;
+	color: black;
+	border: 0.5px solid gray;
 }
 
 #contact form textarea {
-	width:100%;
-	display:block;
-	padding:2.2%;
-	margin:2% auto;
-	border:0.5px solid gray;
+	width: 100%;
+	display: block;
+	padding: 2.2%;
+	margin: 2% auto;
+	border: 0.5px solid gray;
 }
 
 #contact .button {
-	color:white;
-	border:1px solid white;
-	width:50%;
-	background-color:transparent;
-	text-align:center;
-	margin:3% auto;
-	transition:0.25s all linear;
+	color: white;
+	border: 1px solid white;
+	display: block;
+	/*width: 50%;*/
+	background-color: transparent;
+	text-align: center;
+	margin: 3% auto;
+	transition: 0.25s all linear;
 }
 
 #contact .button:hover,
 #contact .button:focus {
-	color:rgb(23,137,125);
-	background-color:white;
-	transform:scale(1.1, 1.1);
+	color: rgb(23,137,125);
+	background-color: white;
+	transform: scale(1.1, 1.1);
 
 }
 
+@media (min-width:500px) {
+	#intro { height: auto; }
+	#header h1 { font-size: 6vw; }
+	#header p { font-size: 4vw; }
+	.title { font-size: 4vw; }
+	li { font-size: 4vw; }
+	#works > .flex-container { justify-content: space-between; }
+	.project { flex-basis: 42%; }
+	.caption { font-size: 2.5vw; }
+}
 
-@media screen and (min-width:830px) {
-	#intro {
-		height:100vh;
-	}
 
-	li {
-		font-size:2.5vw;
-	}
-
-	#contact p {
-		float:left;
-		display:inline;
-		width:50%;
-		padding:1%;
-		font-size:2vw;
-		height:300px;
-		text-align:justify;
-	}
-
-	#contact form {
-		float:right;
-		display:inline;
-		width:50%;
-		padding:1%;
-		height:400px;
-	}
-
-	#contact ul {
-		clear:both;
-		padding:0;
-	}
+@media screen and (min-width:992px) {
+	#intro { min-height: 700px; }
+	#header h1 { font-size: 6vw; }
+	li { font-size:3vw; }
+	#works > .flex-container { justify-content: center; }
+	.project { margin: 1%; padding: 1.5%; flex-basis: 	
+			31%; }
+	.caption { font-size: 1.5vw; }
+	.title { padding: 2%; }
+	#tech { padding: 2%; }
+	#contact { padding: 2%; }
+	#contact p { float:left; display:inline; width:50%;
+		padding:1%; font-size:2vw; height:300px; 
+		text-align:justify; }
+	#contact form { float:right; display:inline;
+		width:50%; padding:1%; height:400px; }
+	#contact ul { clear:both; padding:0; }
 }
 
 
