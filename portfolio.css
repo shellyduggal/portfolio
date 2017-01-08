@@ -65,9 +65,9 @@ img, iframe, video, object {
 /*************************/
 
 #intro {
-	background: url(images/desk.jpg) no-repeat center;
+	background: url(images/blurred-city.jpg) no-repeat center;
 	background-size: cover;
-	background-color: rgb(6, 47, 49);
+	background-color: #10206B;
 	height: 300px;
 	display: flex;
 	align-items: flex-end;
@@ -102,7 +102,6 @@ img, iframe, video, object {
 .title { 
 	font-size: 5.5vw;
 	padding: 5%;
-	font-weight: bold;
 }
 
 .flex-container {
@@ -121,10 +120,12 @@ img, iframe, video, object {
 	max-width: 100%;
 	height: auto;
 	display: block;
+	margin: 0 auto;
 }
 
 .project img:hover {
 	transform: scale(1.05,1.05);
+	padding: 5%;
 }
 
 .caption {
@@ -163,7 +164,7 @@ li i:hover {
 }
 
 #contact p {
-	font-size: 4vw;
+	font-size: 3vw;
 	height: 200px;
 	overflow-y: scroll;
 	padding: 3%;
@@ -217,7 +218,7 @@ li i:hover {
 	#header h1 { font-size: 6vw; }
 	#header p { font-size: 4vw; }
 	.title { font-size: 4vw; }
-	li { font-size: 4vw; }
+	li { font-size: 3vw; }
 	#works > .flex-container { justify-content: space-between; }
 	.project { flex-basis: 42%; }
 	.caption { font-size: 2.5vw; }
@@ -227,7 +228,7 @@ li i:hover {
 @media screen and (min-width:992px) {
 	#intro { min-height: 700px; }
 	#header h1 { font-size: 6vw; }
-	li { font-size:3vw; }
+	li { font-size:2vw; }
 	#works > .flex-container { justify-content: center; }
 	.project { margin: 1%; padding: 1.5%; flex-basis: 	
 			31%; }
