@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed:700" rel="stylesheet">
 	<!-- DevIcons -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 	<!-- Font Awesome -->
@@ -14,20 +14,23 @@
 
 	<title>21 Beans Web Creations</title>
 
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src="libs/jquery.slimscroll.min.js"></script>
+
 </head>
 <body>
 <!-- Header -->
 <div id="intro">
 	<div id="header">
 		<h1>21 Beans Web Creations</h1>
-		<p>Web Development by Shelly Duggal</p>
+		<p>Shelly Duggal</p>
+		<p>Front-End Web Development</p>
 		<p>Austin, Texas</p>
+		<a class="cta" href="contact.html">Let's Work Together</a>
 	</div>
 </div>
 <!-- Works -->
-<div id="works">
+<div id="works" class="section">
 	<div class="title">Featured Works</div>
 	<ul class="flex-container">
 		<li class="project"><a href="/duggal-optics/duggal-main.html" target="_blank"><img src="images/duggal.png"><p class="caption">Duggal Optics, Delhi</p></a></li>
@@ -39,7 +42,7 @@
 	</ul>	
 </div>
 <!-- Tech -->
-<div id="tech">
+<div id="tech" class="section">
 	<div class="title">My Instruments</div>
 	<ul class="flex-container">
 		<li class="item"><i class="devicon-bootstrap-plain"></i></li>
@@ -51,30 +54,18 @@
 		<li class="item"><i class="devicon-python-plain"></i></li>
 	</ul>
 </div>
-<!-- Contact -->
-<div id="contact" class="grouping">
-	<div class="title">Say Hello</div>
-	<div id="scroll">
-		<p>Welcome! On this site, you'll find a few of the things I've been working on lately. My skills include front-end web development utilizing frameworks and libraries like Bootstrap, Semantic UI, jQuery, and Paper.js. I've also begun work in back-end development with Node.js, Express, and MongoDB.<br>
-		In my free time, you'll find me building and fixing things - I love to cook, draw, knit, organize, and generally enhance the world around me. I have extensive experience in team leadership, project planning and management, and fixing things that no longer work.<br>
-		I would love to hear about your current projects and discuss what I can bring to the table. Use this handy form or stop by my social media to drop me a line. I'm looking forward to working with you!</p>
-	</div>
-	<form action="/cgi-sys/formmail.cgi" method="POST"> 
-		<input type=hidden name="recipient" value="dzturtleshell@gmail.com"> 
-		<input type=hidden name="subject" value="21 Beans Message"> 
-		<input type=hidden name="redirect" value="http://www.21beans.com/thanks.html" target="_blank">
-		<input type="text" name="name" placeholder="Name">
-		<input type="email" name="email" placeholder="Email Address">
-		<textarea placeholder="Hello" name="message" rows="10" cols="5"></textarea>
-		<input type="submit" name="Submit" class="button">
-	</form>
-	<ul class="flex-container">
+<!-- Footer -->
+<div id="footer">
+	<div class="links grouping">
+		<ul>
 		<li><a href="https://www.facebook.com/dzturtleshell" target="_blank"><i class="fa fa-facebook"></i></a></li>
 		<li><a href="https://www.twitter.com/dzturtleshell" target="_blank"><i class="fa fa-twitter"></i></a></li>
 		<li><a href="https://www.linkedin.com/in/shellyduggal" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-		<li><a href="https://github.com/duggalsf" target="_blank"><i class="fa fa-github"></i></a></li>
-		<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+		<li><a href="https://github.com/shellyduggal" target="_blank"><i class="fa fa-github"></i></a></li>
 	</ul>
+	</div>
+	<div>© 21 Beans Web Creations 2017</div>	
 </div>
+<!-- Close Footer -->
 </body>
 </html>

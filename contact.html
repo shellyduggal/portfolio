@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed" rel="stylesheet">
+	<!-- DevIcons -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/a5f37920dd.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+	<title>21 Beans Web Creations - Contact Us</title>
+
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="banner">
+	<!-- navigation -->
+	<img src="images/blurred-city.jpg" class="responsive">
+</div>
+
+<div>
+	<div class="section">
+		<p class="welcome">
+		Welcome! I am a front-end web developer and designer in Austin, Texas. I am here to make sure you get the website you want - without the hassle. I offer a wide variety of web development services, including Wordpress. <br>I have extensive experience in team leadership, project planning and management, and fixing things that no longer work. <br>
+		Tell me about your current projects and I will show you what I bring to the table. Use the handy form below to get started.</p>	
+	</div>
+
+	<div class="section">
+		<p class="job">Are you an organization looking to hire a developer? Drop me a line - I'd love to hear about your available opportunities.<br><a href="#">Find My Resume Here</a></p>
+	</div>
+
+	<form action="/cgi-sys/formmail.cgi" method="POST">
+		<input type=hidden name="recipient" value="dzturtleshell@gmail.com"> 
+		<input type=hidden name="subject" value="21 Beans Message"> 
+		<input type=hidden name="redirect" value="http://www.21beans.com/thanks.html" target="_blank">
+		<div class="inputs">
+			<div class="left">
+				<div class="group">
+					<label>Name</label>
+					<input type="text" name="name" required autocomplete="on" class="field">
+				</div>
+				<div class="group">
+					<label>Company</label>
+					<input type="text" name="company" autocomplete="on" class="field">
+				</div>
+				<div class="group">
+					<label>Email Address</label>
+					<input type="email" name="email" required autocomplete="on" class="field">
+				</div>
+				<div class="group">
+					<label>General Questions or Comments</label>
+					<textarea name="comments" class="field"></textarea>
+				</div>
+			</div>
+			<div class="right">
+				<div class="group">
+					<label>Current Website</label>
+					<input type="url" name="website" autocomplete="on" class="field">
+				</div>
+				<div class="group">
+					<label>Describe Your Project</label>
+					<textarea name="describe" class="field">Be sure to include the specific challenges you're trying to solve with a redesign or new site!</textarea>
+				</div>
+				<div class="group">
+					<label>Services Needed</label><br>
+					<label><input type="checkbox" name="new"> New Website</label>
+					<label><input type="checkbox" name="update"> Update Existing Site</label>
+					<label><input type="checkbox" name="design"> Design Services</label>
+					<label><input type="checkbox" name="content"> Content Development</label>
+					<label><input type="checkbox" name="commerce"> E-commerce</label>
+					<label><input type="checkbox" name="wp"> Wordpress</label>
+				</div>
+				<div class="group">
+					<label>Timeline</label>
+					<input type="text" name="timeline" class="field">
+				</div>
+				<div class="group">
+					<label>Budget</label>
+					<input type="text" name="budget" class="field">
+				</div>
+			</div>
+			
+		</div>
+		<button type="submit" class="send">Send</button>
+	</form>
+	<p class="privacy">We will never share your information without your consent</p>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	<div class="links grouping">
+		<ul>
+		<li><a href="https://www.facebook.com/dzturtleshell" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://www.twitter.com/dzturtleshell" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/shellyduggal" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="https://github.com/shellyduggal" target="_blank"><i class="fa fa-github"></i></a></li>
+	</ul>
+	</div>
+	<div>© 21 Beans Web Creations 2017</div>	
+</div>
+<!-- Close Footer -->
+
+</body>
+</html>
