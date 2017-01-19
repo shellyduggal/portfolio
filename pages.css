@@ -3,19 +3,9 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, h1, h2, h3, p,
+a, img, ol, ul, li, form, label,
+figure, footer, header, nav, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -26,8 +16,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+figure, footer, header, nav, section {
 	display: block;
 }
 
@@ -35,8 +24,7 @@ body {
 	line-height: 1.4;
 	font-family: 'Roboto Condensed', Helvetica, sans-serif;
 	text-align: center;
-	letter-spacing: 3px;
-	background-color: #293152;
+	background-color: #2B2E4F;
 	color: #394889;
 	overflow-x: hidden;
 }
@@ -58,6 +46,7 @@ ol, ul {
 
 img, iframe, video, object {
 	max-width: 100%;
+	height: auto;
 }
 
 
@@ -65,49 +54,47 @@ img, iframe, video, object {
 /* GENERAL */
 /*************************/
 
+
 #intro {
-	background: url(images/blurred-city.jpg) no-repeat center;
-	background-size: cover;
-	background-color: #10206B;
 	font-family: 'Oswald', Helvetica, sans-serif;
-	color: #e8ecfc;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 15% 0 10% 0;
+	color: #e8e9ed;
+	position: relative;
 }
 
-#header {
+.intro__text-content {
 	width: 100%;
 	background-color: rgba(104, 106, 130, 0.7);
-	text-shadow: 1px 1px 1px gray;
-	height: 100px;
-	
-}
-
-#header h1 {
-	font-size: 15vw;
 	text-align: right;
-	padding: 1% 2%;
+	text-shadow: 1px 1px 1px gray;
+	position: absolute;
+	top: 30%; 
 }
 
-.thanks {
+.intro__title {
+	font-size: 10vw;
+	padding-right: 5px;
+}
+
+.intro__message {
 	background-color: rgba(104, 106, 130, 0.7);
 	text-shadow: 1px 1px 1px gray;
 	border: 1px solid #394889;
 	box-shadow: 1px 1px 5px #4558a5;
-	margin: 10% 3%;
-	padding: 3%;
-	font-family: "Roboto Condensed", Helvetica, sans-serif;
 	text-align: center;
-	line-height: 1.5;
+	padding: 3%;
+	max-width: 55%;
+	margin: 0 auto;
 
 }
+
+
+/**************************/
+/* CONTENT */
+/*************************/
 
 .redirect {
 	text-decoration: none;
 	color: #e8ecfc;
-	letter-spacing: 1.5px;
 	font-weight: 700;
 }
 

@@ -1,11 +1,4 @@
 
-//remove scrollbar from bio
-$(function() {
-	$('#scroll').slimScroll({
-		height:'auto'
-	});
-});
-
 //redirect from thankyou page
 $(document).ready(function() {
 	setTimeout(function() {
