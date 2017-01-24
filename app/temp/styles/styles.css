@@ -567,7 +567,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 950px) {
 	.form {
 		max-width: 60%;
 	}
@@ -582,6 +582,23 @@ body {
 .intro__image {
   max-width: 100%;
   height: auto;
+}
+
+.intro__menu {
+  background-color: transparent;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  border: none;
+  font-family: inherit;
+  color: #e8e9ed;
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+.intro__menu--open {
+  background-color: #c9c9c9;
+  color: #394889;
 }
 
 .intro__text-content {
@@ -606,13 +623,29 @@ body {
 .intro__title--lg {
   font-size: 10vw;
   margin: 1% auto;
-  padding: 0 1% 10% 0;
+  padding: 10% 1% 0 0;
 }
 
 .intro__subtitle {
   font-size: 4vw;
   margin: 1% auto;
   padding-right: 1%;
+}
+
+@media screen and (min-width: 700px) {
+	.intro__title--lg {
+		font-size: 7vw;
+	}
+
+	.intro__menu {
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.intro__menu {
+		font-size: 2vw;
+	}
 }
 
 .links {
@@ -693,6 +726,54 @@ body {
           justify-content: center;
 }
 
+.nav {
+	background-color: #c9c9c9;
+	color: #394889;
+	overflow: hidden;
+	height: 0;
+	width: 100%;
+
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #394889;
+  font-weight: 700;
+  display: block;
+}
+
+.nav__open {
+  -webkit-animation: slideDown 0.5s ease;
+          animation: slideDown 0.5s ease;
+  height: auto;
+}
+
+@-webkit-keyframes slideDown {
+	0% {-webkit-transform: translateY(-100%);transform: translateY(-100%); opacity: 0;}
+	100% {-webkit-transform: translateY(0%);transform: translateY(0%); opacity: 1;}
+}
+
+@keyframes slideDown {
+	0% {-webkit-transform: translateY(-100%);transform: translateY(-100%); opacity: 0;}
+	100% {-webkit-transform: translateY(0%);transform: translateY(0%); opacity: 1;}
+}
+
 .section {
 	background-color: #c9c9c9;
 	width: 75%;
@@ -760,7 +841,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 950px) {
 	.section {
 		max-height: 1000px;
 	}

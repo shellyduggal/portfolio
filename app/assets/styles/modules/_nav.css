@@ -1,0 +1,37 @@
+.nav {
+	background-color: $bggray;
+	color: $fontpurple;
+	overflow: hidden;
+	height: 0;
+	width: 100%;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding: 1%;
+		margin: 0 auto;
+	}
+
+	&__item {
+		display: inline-block;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $fontpurple;
+		font-weight: 700;
+		display: block;
+	}
+
+	&__open {
+		animation: slideDown 0.5s ease;
+		height: auto;
+	}
+
+}
+
+@keyframes slideDown {
+	0% {transform: translateY(-100%); opacity: 0;}
+	100% {transform: translateY(0%); opacity: 1;}
+}

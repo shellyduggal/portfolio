@@ -8,6 +8,23 @@
 		height: auto;
 	}
 
+	&__menu {
+		background-color: transparent;
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		border: none;
+		font-family: inherit;
+		color: $bgwhite;
+		font-weight: 700;
+		font-size: 4vw;
+	}
+
+	&__menu--open {
+		background-color: $bggray;
+		color: $fontpurple;
+	}
+
 	&__text-content {
 		width: 100%;
 		background-color: rgba(104, 106, 130, 0.7);
@@ -30,12 +47,28 @@
 	&__title--lg {
 		font-size: 10vw;
 		margin: 1% auto;
-		padding: 0 1% 10% 0;
+		padding: 10% 1% 0 0;
 	}
 
 	&__subtitle {
 		font-size: 4vw;
 		margin: 1% auto;
 		padding-right: 1%;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.intro__title--lg {
+		font-size: 7vw;
+	}
+
+	.intro__menu {
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.intro__menu {
+		font-size: 2vw;
 	}
 }

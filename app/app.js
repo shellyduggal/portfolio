@@ -7,3 +7,12 @@ $(document).ready(function() {
 		});
 	}, 2000);
 });
+
+
+//toggle hidden menu
+$(".intro__menu").click(function() {
+	$(".intro__menu").toggleClass("intro__menu--open");
+	$(".nav").toggleClass("nav__open");
+	$("#caret").toggleClass("fa-caret-down");
+	$("#caret").toggleClass("fa-caret-up");
+});
