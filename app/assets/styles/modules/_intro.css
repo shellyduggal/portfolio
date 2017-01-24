@@ -1,7 +1,8 @@
 .intro {
 	position: relative;
 	overflow: hidden;
-	max-height: 75vh;
+	max-height: 100vh;
+	padding-top: 0;
 
 	&__image {
 		max-width: 100%;
@@ -11,8 +12,9 @@
 	&__menu {
 		background-color: transparent;
 		position: absolute;
-		top: 1%;
-		right: 1%;
+		top: 0;
+		right: 0;
+		padding: 1%;
 		border: none;
 		font-family: inherit;
 		color: $bgwhite;

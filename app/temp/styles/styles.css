@@ -576,7 +576,8 @@ body {
 .intro {
 	position: relative;
 	overflow: hidden;
-	max-height: 75vh;
+	max-height: 100vh;
+	padding-top: 0;
 }
 
 .intro__image {
@@ -587,8 +588,9 @@ body {
 .intro__menu {
   background-color: transparent;
   position: absolute;
-  top: 1%;
-  right: 1%;
+  top: 0;
+  right: 0;
+  padding: 1%;
   border: none;
   font-family: inherit;
   color: #e8e9ed;
@@ -794,6 +796,7 @@ body {
 
 .section__project {
   background-color: #e8e9ed;
+  width: 60%;
   border: 2px solid #394889;
   padding: 4%;
   margin: 3% 2%;

@@ -4,7 +4,12 @@ var gulp = require('gulp'),
 	autoprefixer = require('autoprefixer'),
 	cssvars = require('postcss-simple-vars'),
 	nested = require('postcss-nested'),
-	cssImport = require('postcss-import');
+	cssImport = require('postcss-import'),
+  del = require('del'),
+  usemin = require('gulp-usemin'),
+  rev = require('gulp-rev'),
+  cssnano = require('gulp-cssnano'),
+  uglify = require('gulp-uglify');
 
 gulp.task('default', function() {
   console.log("Default Gulp Task");
@@ -22,4 +27,25 @@ gulp.task('watch', function() {
   watch('./app/assets/styles/**/*.css', function() {
     gulp.start('styles');
   });
+});
+
+
+
+
+//DEPLOY TASKS
+gulp.task('build', ['deleteDistFolder','optimizeImages', 'usemin']);
+
+gulp.task('deleteDistFolder', function() {
+  return del("./dist");
+});
+
+gulp.task('optimizeImages', ['deleteDistFolder'], function() {
+  return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/bg', '!./app/assets/images/bg/**/*'])
+    .pipe(gulp.dest("./dist/assets/images"));
+});
+
+gulp.task('usemin', ['deleteDistFolder'], function() {
+  return gulp.src(['./app/index.html', './app/contact.html', './app/thanks.html'])
+    .pipe(usemin())
+    .pipe(gulp.dest("./dist"));
 });
