@@ -1,0 +1,62 @@
+.form {
+	background-color: rgba(57, 72, 137, 0.2);
+	border: 1px solid $fontpurple;
+	box-shadow: 1px 1px 5px #4558a5;
+	margin: 3% auto;
+	padding: 1%;
+	text-align: left;
+	overflow-x: hidden;
+
+	&__group {
+		margin-bottom: 2%;
+	}
+
+	&__labels {
+		display: inline-block;
+		max-width: 100%;
+		margin-bottom: 0.5%;
+		font-weight: 700;
+		padding: 1%;
+	}
+
+	&__required {
+		color: red;
+	}
+
+	&__field {
+		display: block;
+		width: 95%;
+		padding: 0.5% 1%;
+		margin: 0.5%;
+		height: 15px;
+		color: $fontpurple;
+	}
+
+	&__checkboxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__box {
+		display: inline-block;
+		float: left;
+		margin-right: 2%;
+	}
+
+	&--text{
+		min-height: 75px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.form {
+		max-width: 75%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.form {
+		max-width: 60%;
+	}
+}

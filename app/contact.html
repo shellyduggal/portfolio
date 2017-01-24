@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed" rel="stylesheet">
+	<!-- DevIcons -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/a5f37920dd.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+	<title>21 Beans Web Creations - Contact Us</title>
+
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+</head>
+<body>
+
+<div class="intro">
+	<img src="assets/images/blurred-city.jpg" class="intro__image">
+	<div class="intro__text-content">
+		<h1 class="intro__title--lg">Get in Touch</h1>
+	</div>
+</div>
+
+<div>
+	<div class="message">
+		Welcome! I am a front-end web developer and designer in Austin, Texas. I am here to make sure you get the website you want - without the hassle. I offer a wide variety of web development services, including Wordpress. <br>I have extensive experience in team leadership, project planning and management, and fixing things that no longer work. <br>
+		Tell me about your current projects and I will show you what I bring to the table. Use the handy form below to get started.	
+	</div>
+
+	<div class="message">Are you an organization looking to hire a developer? Drop me a line - I'd love to hear about available opportunities.
+	</div>
+
+	<form action="/cgi-sys/formmail.cgi" method="POST" class="form">
+		<input type=hidden name="recipient" value="shelly@21beans.com"> 
+		<input type=hidden name="subject" value="21 Beans Message"> 
+		<input type=hidden name="redirect" value="thanks.html" target="_blank">
+		<div class="form__inputs">
+				<div class="form__group">
+					<label class="form__labels">Name<span class="form__required"> *</span></label>
+					<input type="text" name="name" required autocomplete="on" class="form__field">
+				</div>
+				<div class="form__group">
+					<label class="form__labels">Company</label>
+					<input type="text" name="company" autocomplete="on" class="form__field">
+				</div>
+				<div class="form__group">
+					<label class="form__labels">Email Address<span class="form__required"> *</span></label>
+					<input type="email" name="email" required autocomplete="on" class="form__field">
+				</div>
+				<div class="form__group">
+					<label class="form__labels">General Questions or Comments</label>
+					<textarea name="comments" class="form__field form--text"></textarea>
+				</div>
+				<div class="form__group">
+					<label class="form__labels">Current Website</label>
+					<input type="text" name="website" autocomplete="on" class="form__field">
+				</div>
+				<div class="form__group">
+					<label class="form__labels">Describe Your Project</label>
+					<textarea name="describe" class="form__field form--text">Be sure to include the specific challenges you're trying to solve with a redesign or new site!</textarea>
+				</div>
+				<div class="form__group form__checkboxes">
+					<label class="form__labels">Services Needed</label>
+					<label class="form__labels"><input type="checkbox" name="new" class="form__box"> New Website</label>
+					<label class="form__labels"><input type="checkbox" name="update" class="form__box"> Update Existing Site</label>
+					<label class="form__labels"><input type="checkbox" name="design" class="form__box"> Design Services</label>
+					<label class="form__labels"><input type="checkbox" name="content" class="form__box"> Content Development</label>
+					<label class="form__labels"><input type="checkbox" name="commerce" class="form__box"> E-commerce</label>
+					<label class="form__labels"><input type="checkbox" name="wp" class="form__box"> Wordpress</label>
+				</div>
+				<div class="form__group">
+					<label class="form__labels">Timeline</label>
+					<input type="text" name="timeline" class="form__field">
+				</div>
+				<div class="form__group">
+					<label class="form__labels">Budget</label>
+					<input type="text" name="budget" class="form__field">
+				</div>
+			
+		</div>
+		<button type="submit" class="links--btn links--send">Send</button>
+	</form>
+	<p class="message">We will never share your information without your consent</p>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+	<ul class="list">
+		<li class="links--icon">
+			<a href="https://www.facebook.com/dzturtleshell" target="_blank" class="footer__social-links">	
+				<i class="fa fa-facebook"></i>
+			</a>
+		</li>
+		
+		<li class="links--icon">
+			<a href="https://www.twitter.com/dzturtleshell" target="_blank" class="footer__social-links">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+
+		<li class="links--icon">
+			<a href="https://www.linkedin.com/in/shellyduggal" target="_blank" class="footer__social-links">
+				<i class="fa fa-linkedin"></i>
+			</a>
+		</li>
+
+		<li class="links--icon">
+			<a href="https://github.com/shellyduggal" target="_blank" class="footer__social-links">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	</ul>
+
+	<div class="footer__content">Copyright 21 Beans Web Creations 2017</div>	
+</div>
+<!-- Close Footer -->
+
+</body>
+</html>

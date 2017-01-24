@@ -1,0 +1,56 @@
+.links {
+	display: block;
+	text-decoration: none;
+	color: $fontpurple;
+	text-shadow: none;
+	
+	&--btn {
+		overflow-x: hidden;
+		box-sizing: border-box;
+		margin: 3% auto;
+		padding: 2% 1%;
+		cursor: pointer;
+		color: $bgwhite;
+		text-align: center;
+	}
+
+	&--cta {
+		background-color: $fontpurple;
+		border: 1px solid $bgwhite;
+		width: 33%;
+		font-size: 3vw;
+	}
+
+	&--icon {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 1%;
+	}
+
+	&--icon:hover {
+		transform: scale(1.3, 1.3);
+	}
+
+	&--white {
+		color: $bgwhite;
+	}
+
+	&--send {
+		background-color: $brightblue;
+		border: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.links--icon {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.links--icon {
+		font-size: 2em;
+	}
+}

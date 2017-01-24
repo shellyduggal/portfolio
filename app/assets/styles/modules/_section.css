@@ -1,0 +1,83 @@
+.section {
+	background-color: $bggray;
+	width: 75%;
+	max-height: 450px;
+	overflow-y: scroll;
+	border: 1px solid $fontpurple;
+	box-shadow: 1px 1px 5px #4558a5;
+	margin: 3% auto;
+	padding: 2%;
+	text-align: center;
+	color: $fontpurple;
+
+
+	&__title {
+		font-size: 5.5vw;
+		padding: 5%;
+	}
+
+	&__project {
+		background-color: $bgwhite;
+		border: 2px solid $fontpurple;
+		padding: 4%;
+		margin: 3% 2%;
+	}
+
+	&__icon {
+		padding: 15% 5%;
+		display: block;
+		margin: 0 auto;
+		font-size: 10vw;
+	}
+
+	&__caption {
+		border-top: 1px solid $fontpurple;
+		width: 80%;
+		margin: 1.25% auto 0 auto;
+		padding-top: 2%;
+	}
+}
+
+.message {
+	width: 90%;
+	background-color: $bggray;
+	border: 1px solid $fontpurple;
+	box-shadow: 1px 1px 5px #4558a5;
+	margin: 3% auto;
+	padding: 2%;
+	text-align: center;
+	color: $fontpurple;
+}
+
+
+@media screen and (min-width: 700px) {
+	.section {
+		width: 90%;
+
+		&__project {
+			flex-basis: 20%;
+		}
+
+		&__icon {
+			font-size: 5vw;
+		}
+	}
+
+	.message {
+		max-width: 75%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.section {
+		max-height: 1000px;
+
+		&__caption {
+			font-size: 1.5em;
+		}
+	}
+
+	.message {
+		max-width: 60%;
+	}
+}

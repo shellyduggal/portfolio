@@ -1,0 +1,41 @@
+.intro {
+	position: relative;
+	overflow: hidden;
+	max-height: 75vh;
+
+	&__image {
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__text-content {
+		width: 100%;
+		background-color: rgba(104, 106, 130, 0.7);
+		font-family: 'Oswald', Helvetica, sans-serif;
+		color: $bgwhite;
+		text-align: right;
+		text-shadow: 1px 1px 1px gray;
+		position: absolute;
+		bottom: 5%;
+		right: 0;
+	}
+
+	&__title {
+		font-size: 7.5vw;
+		margin: 1% auto;
+		padding-right: 1%;
+		font-weight: 400;
+	}
+
+	&__title--lg {
+		font-size: 10vw;
+		margin: 1% auto;
+		padding: 0 1% 10% 0;
+	}
+
+	&__subtitle {
+		font-size: 4vw;
+		margin: 1% auto;
+		padding-right: 1%;
+	}
+}
