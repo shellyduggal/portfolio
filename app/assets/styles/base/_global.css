@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto Condensed', Helvetica, sans-serif;
 	text-align: center;
+	font-size: 100%;
 	background-image: url(/assets/images/crossword.png);
 	background-color: $bgwhite;
 	color: $fontpurple;

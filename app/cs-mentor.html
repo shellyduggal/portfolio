@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed" rel="stylesheet">
+	<!-- DevIcons -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/a5f37920dd.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+	<title>21 Beans Web Creations - Mentorship Program</title>
+
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+</head>
+<body>
+<!-- Nav -->
+<div class="nav">
+	<ul class="nav__list">
+		<li class="nav__item">
+			<a class="nav__link" href="http://www.21beans.com">Home</a>
+		</li>
+		<li class="nav__item"><hr class="nav__hr"></li>	
+		<li class="nav__item">
+			<a class="nav__link" href="http://www.21beans.com/cs-mentor.html">Case Study: Mentor Program</a>
+		</li>
+		<li class="nav__item"><hr class="nav__hr"></li>	
+		<li class="nav__item">
+			<a class="nav__link" href="http://www.21beans.com/cs-textgame.html">Case Study: Text Game</a>
+		</li>
+		<li class="nav__item"><hr class="nav__hr"></li>	
+		<li class="nav__item">
+			<a class="nav__link" href="http://www.21beans.com/contact.html">Get in Touch</a>
+		</li>
+		<li class="nav__item"><hr class="nav__hr"></li>	
+	</ul>
+</div>
+<!-- Close Nav -->
+
+<!-- Header -->
+<div class="intro">
+	<button class="intro__menu">Menu
+		<i id="caret" class="fa fa-caret-down" aria-hidden="true"></i>
+	</button>
+	
+	<img src="assets/images/blurred-city.jpg" class="intro__image">
+	<div class="intro__text-content">
+		<h1 class="intro__title">Case Study:<br/>Mentor Program</h1>
+	</div>
+</div>
+<!-- Close Header -->
+
+<div class="case">
+	<div class="case__message">
+		<p>The new Mentorship Program for the <a href="http://www.capitalareadental.org" class="case__links">Capital Area Dental Society</a> needed a better user experience. The page was difficult to read, only worked on large desktop browsers, and was a major burden on the webmaster for even the simplest of content updates.</p> 
+		<p>I identified the problem and approached the webmaster with ideas for solutions. Utilizing the features of the previously installed BuddyPress plugin, I created a dynamic page with a modern, responsive design that updates automatically.</p>
+		<p class="case__aside">This project is currently live on the CADS website, but the Mentorship Program page is visible only to members. I have added some screenshots to show you the before and after.</p>
+	</div>
+
+	<div class="case__message">
+		<div class="case__title">The Challenge</div>
+		<p>With more dentists entering the workforce each year, local dental societies are searching for new ways to support their newest members. The Capital Area Dental Society recently launched a mentorship program to connect New Dentists with more experienced members in the group.</p>
+		<p>I visited the Mentorship Program page after it launched and had many concerns:</p>
+		<p class="case__highlight">On a desktop it was difficult to read, on a mobile device it was impossible.</p>
+		<ul class="case__list">
+			<li>The mentors were listed in a spreadsheet embedded on the page</li>
+			<li>Multiple types of data (including images of various sizes) were being entered in each cell</li>
+			<li>Portions of the spreadsheet that extended past the viewport width were lost entirely (the page does not scroll horizontally)</li>
+		</ul>
+		<p>I decided to reach out to the Webmaster and offer my web development services.</p>
+	</div>
+
+	<div class="case__pictures">
+		<img src="assets/images/mentor-old.png" class="case__image">
+	</div>
+
+	<div class="case__message">
+		<div class="case__title">The Process</div>
+		<p class="case__highlight">First, I made a simple design in HTML/CSS to use as a starting point to talk about the possibilities, the needs for the page, what we want it to look like and what features it should have. </p>
+		<p>Next, the webmaster and I sat down to explore the problem. In speaking with him, I learned of the difficulties he had in updating the page. It was time consuming to change the sheet then update the site every time a new mentor needed to be listed, or someone wanted their info to be changed.</p>
+		<p>We also discussed the overall website and his vision for it. He explained that the site was managed with WordPress and he had recently added bbPress and BuddyPress to help foster a sense of community among members.</p>
+		<p class="case__highlight">I suggested we utilize the user profile feature of BuddyPress to create an entirely new mentor page that would allow mentors to update their own info.</p> 
+		<p>We discussed project specifications then I set to work researching WordPress and plugins.</p>
+	</div>
+	
+	<div class="case__message">
+		<div class="case__title">The Solutions</div>
+		<div class="case__col">
+			<p>Create a child theme for the entire website to preserve customization and make future projects simpler</p>
+			<p>Use the XProfile feature of BuddyPress to add relevant mentor info fields to user profiles</p>
+			<p>Create a hidden "Mentors" group through BuddyPress, all mentors are members of this group and can only be added by invitation</p>
+			<p>Create a custom page template inside the child theme specifically for the mentorship program </p>
+			<p>Tweak the group members loop to pull selected profile data for each member and display it on the mentorship program page</p>
+			<p>Use the BuddyPress group members loop function to list all mentors on the mentorship program page template</p>
+		</div>
+	</div>
+
+	<div class="case__pictures">
+		<img src="assets/images/mentor-new.png" class="case__image">
+	</div>
+
+	<div class="case__message">
+		<div class="case__title">The Result</div>
+		<ul class="case__list">
+			<li>Displays each mentor with a uniform size image, relevant info, and a link to their user profile </li>
+			<li>User profiles have been extended to include fields for all information present on the original mentorship spreadsheet</li>
+			<li>Allows mentors to update their own listings by simply updating their user profiles </li>
+			<li>Allows mentors to upload/crop their own photos</li>
+			<li>Fully responsive with modern design</li>
+		</ul>
+		<p>This was a challenging and rewarding project in many ways.</p> 
+		<p>This was my first experience with WordPress - it taught me the power, efficiency, and complexity of the service. WordPress does a beautiful job of making complex tasks easier for everyone from developer to client to customer. </p>
+		<p>I spent much of my time simply reading BuddyPress code to understand the features. I used the docs and forums as much as possible, but found my task was unique and I needed to understand the code to develop my own solutions.</p>
+		<p>This process taught me the importance of writing clean, maintainable code with good documentation, good comments, and reliable support. I am very thankful that the webmaster had chosen a quality plugin like BuddyPress!</p>
+	</div>
+	
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+	<ul class="list">
+		<li class="links--icon">
+			<a href="https://www.facebook.com/dzturtleshell" target="_blank" class="footer__social-links">	
+				<i class="fa fa-facebook"></i>
+			</a>
+		</li>
+		
+		<li class="links--icon">
+			<a href="https://www.twitter.com/dzturtleshell" target="_blank" class="footer__social-links">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+
+		<li class="links--icon">
+			<a href="https://www.linkedin.com/in/shellyduggal" target="_blank" class="footer__social-links">
+				<i class="fa fa-linkedin"></i>
+			</a>
+		</li>
+
+		<li class="links--icon">
+			<a href="https://github.com/shellyduggal" target="_blank" class="footer__social-links">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	</ul>
+
+	<div class="footer__content">Copyright 21 Beans Web Creations 2017</div>	
+</div>
+<!-- Close Footer -->
+
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

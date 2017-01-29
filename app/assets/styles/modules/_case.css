@@ -1,0 +1,62 @@
+.case {
+
+	&__message {
+		width: 80%;
+		max-height: 250px;
+		overflow-y: scroll;
+		margin: 3% auto;
+		padding: 2%;
+		background-color: $bggray;
+		border: 1px solid $fontpurple;
+		box-shadow: 1px 1px 5px #4558a5;
+		text-align: left;
+		font-size: 1.2em;
+	}
+
+	&__links {
+		color: $fontpurple;
+		font-weight: 700;
+	}
+
+	&__aside {
+		font-style: italic;
+	}
+
+	&__title {
+		font-weight: 700;
+		text-align: center;
+		padding: 1%;
+		font-size: 1.2em
+	}
+
+	&__list {
+		padding: 1% 10%;
+		margin: 0 auto;	
+	}
+
+	&__highlight {
+		font-weight: 700;
+		font-style: italic;
+		text-align: center;
+	}
+
+	&__pictures {
+		margin: 2% auto;
+		max-width: 80%;
+	}
+
+	&__image {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.case__message {
+		width: 66%;
+		max-height: 100%;
+		overflow-y: hidden;
+	}
+}

@@ -13,18 +13,26 @@
 		background-color: transparent;
 		position: absolute;
 		top: 0;
-		right: 0;
-		padding: 1%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 2%;
 		border: none;
 		font-family: inherit;
 		color: $bgwhite;
 		font-weight: 700;
-		font-size: 4vw;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	&__menu--open {
 		background-color: $bggray;
 		color: $fontpurple;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	&__text-content {
@@ -40,37 +48,59 @@
 	}
 
 	&__title {
-		font-size: 7.5vw;
 		margin: 1% auto;
 		padding-right: 1%;
 		font-weight: 400;
 	}
 
 	&__title--lg {
-		font-size: 10vw;
 		margin: 1% auto;
 		padding: 10% 1% 0 0;
 	}
 
 	&__subtitle {
-		font-size: 4vw;
 		margin: 1% auto;
 		padding-right: 1%;
 	}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
 	.intro__title--lg {
-		font-size: 7vw;
+		font-size: 3em;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.intro__title {
+		font-size: 3em;
 	}
 
-	.intro__menu {
-		font-size: 3vw;
+	.intro__subtitle {
+		font-size: 1.5em;
 	}
 }
 
 @media screen and (min-width: 950px) {
 	.intro__menu {
-		font-size: 2vw;
+		font-size: 1.5em;
+	}
+
+	.intro__title--lg {
+		font-size: 5em;
+	}
+
+	.intro__subtitle {
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.intro__title {
+		font-size: 5em;
+	}
+
+
+	.intro__subtitle {
+		font-size: 3em;
 	}
 }

@@ -40,12 +40,12 @@ gulp.task('deleteDistFolder', function() {
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-  return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/bg', '!./app/assets/images/bg/**/*'])
+  return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/ignore', '!./app/assets/images/ignore/**/*'])
     .pipe(gulp.dest("./dist/assets/images"));
 });
 
 gulp.task('usemin', ['deleteDistFolder'], function() {
-  return gulp.src(['./app/index.html', './app/contact.html', './app/thanks.html'])
+  return gulp.src(['./app/**/*.html'])
     .pipe(usemin())
     .pipe(gulp.dest("./dist"));
 });

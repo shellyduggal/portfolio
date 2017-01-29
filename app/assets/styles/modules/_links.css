@@ -7,8 +7,8 @@
 	&--btn {
 		overflow-x: hidden;
 		box-sizing: border-box;
-		margin: 3% auto;
-		padding: 2% 1%;
+		margin: 1.5% auto;
+		padding: 1.5% 1%;
 		cursor: pointer;
 		color: $bgwhite;
 		text-align: center;
@@ -17,8 +17,7 @@
 	&--cta {
 		background-color: $fontpurple;
 		border: 1px solid $bgwhite;
-		width: 33%;
-		font-size: 3vw;
+		width: 50%;
 	}
 
 	&--icon {
@@ -43,14 +42,33 @@
 	}
 }
 
+
 @media screen and (min-width: 700px) {
 	.links--icon {
 		font-size: 1.3em;
+	}
+
+	.links--cta {
+		width: 33%;
 	}
 }
 
 @media screen and (min-width: 950px) {
 	.links--icon {
+		font-size: 1.6em;
+	}
+
+	.links--cta {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.links--icon {
+		font-size: 2em;
+	}
+
+	.links--cta {
 		font-size: 2em;
 	}
 }
